@@ -218,3 +218,86 @@ section{
     display: none;
 }
 
+/* Media queries */
+@media (min-width: 800px) {
+    nav .hamburger{
+        display: none;
+    }
+
+    nav ul.nav-list{
+        width: auto;
+        display: flex;
+        align-items: center;
+        background: transparent;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    nav ul.nav-list li{
+        padding-bottom: 0;
+        margin-left: 1.8rem;
+    }
+
+    nav{
+        flex-wrap: nowrap;
+    }
+
+    .hero-text-block h1{
+        width: 60%;
+    }
+    
+}
+
+@media (min-width: 992px){
+
+    .hero{
+        background: white;
+        min-height: auto;
+    }
+
+    .hero-text-block{
+        width: 45%;
+        margin-left: 5%;
+    }
+    .hero-image-block{
+        display: block;
+        width: 55%;
+        margin-left: 4rem;
+    } 
+
+    .hero-text-block h1{
+        color: #2b313d;
+        font-weight: 400;
+        width: 100%;
+    }
+
+    .hero-image-block img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .search-block.hero-search-block input{
+        color: #949fb7;
+    }
+    
+    .search-block.hero-search-block ::placeholder{
+        color: #949fb7;
+    }
+
+    .apartments-list-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
+
+@media (min-width: 1192px){
+    html{
+        font-size: 18px;
+    }
+
+    .apartments-list-wrapper{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
